@@ -3,10 +3,12 @@ import { ProductControllers } from "./product.controller";
 
 const router = express.Router();
 
-router.post("/create-student", ProductControllers.createProduct);
+router.post("/", ProductControllers.createProduct);
 
 router.get("/", ProductControllers.getAllProducts);
 
-router.get("/:studentId", ProductControllers.getSingleProduct);
+router.get("/:productId", ProductControllers.getSingleProduct);
+router.put("/:productId", ProductControllers.updateProduct);
+router.delete("/:productId", ProductControllers.deleteProduct);
 
 export const ProductRoutes = router;
