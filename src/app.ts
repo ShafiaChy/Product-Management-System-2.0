@@ -1,5 +1,5 @@
 import cors from "cors";
-import express, { Application, Request, Response } from "express";
+import express, { Application } from "express";
 import { ProductRoutes } from "./app/modules/products/product.route";
 import { OrderRoutes } from "./app/modules/orders/order.route";
 
